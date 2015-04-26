@@ -24,7 +24,6 @@ public class SoundController : MonoBehaviour
 
 		audioSource = gameObject.AddComponent<AudioSource> ();
 		audioSource.PlayOneShot (bg);
-
 	}
 	
 	public void playJump ()
@@ -37,13 +36,9 @@ public class SoundController : MonoBehaviour
 
 	public void playLanding ()
 	{
-		if (!playedLanding) {
-			if (!audioSource.isPlaying) {
-				if (land != null) {
-					audioSource.PlayOneShot (land);				
-					playedLanding = true; 
-				}
-			}
+		if (land != null) {
+			audioSource.PlayOneShot (land);				
+			playedLanding = true; 
 		}
 	}
 }

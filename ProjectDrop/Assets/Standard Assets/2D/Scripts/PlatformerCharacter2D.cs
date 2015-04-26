@@ -43,8 +43,9 @@ namespace UnityStandardAssets._2D
             Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
             for (int i = 0; i < colliders.Length; i++)
             {
-                if (colliders[i].gameObject != gameObject)
+                if (colliders[i].gameObject != gameObject){
                     m_Grounded = true;
+				}
             }
             m_Anim.SetBool("Ground", m_Grounded);
 
@@ -56,10 +57,6 @@ namespace UnityStandardAssets._2D
         public void Move(float move, bool crouch, bool jump)
         {
 
-			if(m_Grounded)
-			{
-				SoundController.instance.playLanding();
-			}
             // If crouching, check to see if the character can stand up
             if (!crouch && m_Anim.GetBool("Crouch"))
             {
@@ -122,5 +119,10 @@ namespace UnityStandardAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+
+		void OnCollisionEnter2D(Collision2D col)
+		{
+			SoundController.instance.playLanding();
+		}
     }
 }
