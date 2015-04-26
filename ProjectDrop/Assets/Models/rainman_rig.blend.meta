@@ -83,7 +83,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -113,7 +113,7 @@ ModelImporter:
       name: Jump2
       takeName: Jump2
       firstFrame: 9
-      lastFrame: 34
+      lastFrame: 26
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
