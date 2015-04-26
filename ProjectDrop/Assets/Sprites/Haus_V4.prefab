@@ -48,6 +48,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &119760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 462662}
+  - 61: {fileID: 6195334}
+  - 114: {fileID: 11487074}
+  m_Layer: 0
+  m_Name: Killzone 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &125174
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +149,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 473516}
   m_RootOrder: 4
+--- !u!4 &462662
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119760}
+  m_LocalRotation: {x: 0, y: 0, z: .324127614, w: .946013451}
+  m_LocalPosition: {x: 137.399994, y: -204.600006, z: 0}
+  m_LocalScale: {x: .239999965, y: 5.63000011, z: 1}
+  m_Children: []
+  m_Father: {fileID: 473516}
+  m_RootOrder: 5
 --- !u!4 &473516
 Transform:
   m_ObjectHideFlags: 1
@@ -139,7 +168,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127730}
   m_LocalRotation: {x: 0, y: 0, z: -.324127614, w: .946013451}
-  m_LocalPosition: {x: 188, y: 170, z: 0}
+  m_LocalPosition: {x: 115, y: 170, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 478266}
@@ -147,6 +176,7 @@ Transform:
   - {fileID: 475720}
   - {fileID: 432216}
   - {fileID: 435666}
+  - {fileID: 462662}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &475720
@@ -236,12 +266,36 @@ BoxCollider2D:
   m_Offset: {x: 26.250351, y: -7.49113798}
   serializedVersion: 2
   m_Size: {x: 72.5612183, y: 4.95154667}
+--- !u!61 &6195334
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119760}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 26.250351, y: -7.49113798}
+  serializedVersion: 2
+  m_Size: {x: 72.5612183, y: 4.95154667}
 --- !u!114 &11477306
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e053b0a94752146e79954ce4df1b5565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11487074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119760}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e053b0a94752146e79954ce4df1b5565, type: 3}
