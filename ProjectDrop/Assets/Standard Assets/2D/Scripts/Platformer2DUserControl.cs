@@ -9,12 +9,18 @@ namespace UnityStandardAssets._2D
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
-
+		public float startSpeed = 1;
+		public float speedUp = 0.01f;
 
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
+			//InvokeRepeating ("GetFaster", 0, 1);
+		
         }
+	
+
+
 
 
         private void Update()
@@ -31,9 +37,9 @@ namespace UnityStandardAssets._2D
         {
             // Read the inputs.
             bool crouch = Input.GetKey(KeyCode.LeftControl);
-			float h = CrossPlatformInputManager.GetAxis("Horizontal");
             // Pass all parameters to the character control script.
-            m_Character.Move(1, crouch, m_Jump);
+			startSpeed = startSpeed + speedUp;
+			m_Character.Move(startSpeed, crouch, m_Jump);
             m_Jump = false;
         }
     }
