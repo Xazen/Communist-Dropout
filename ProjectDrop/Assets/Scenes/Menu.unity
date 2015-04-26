@@ -368,7 +368,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Text: "Job Swap Squad\n\nAllan Cudicio\n\tGame Designer as 2D Artist\nRaphael
     Koller\n\t3D Artist as Programmer/Level Design\nSamir Riecke\n\tArtist as Producer/Game
     Designer\nDennis Lieu\n\tProgrammer as 3D Artist\nJasmin Heinemann\n\tGame Designer
-    as 2D Artist\nViktor Pekar\n\tProgrammer as Music & SFX\n"
+    as 2D Artist\nChika\n\tProgrammer\nViktor Pekar\n\tProgrammer as Music & SFX\n"
 --- !u!222 &1169117531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -503,7 +503,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -25, y: 231}
+  m_AnchoredPosition: {x: 16, y: 231}
   m_SizeDelta: {x: 3465, y: 1101}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1269416372
@@ -567,7 +567,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -24, y: 58}
+  m_AnchoredPosition: {x: -3, y: 58}
   m_SizeDelta: {x: 149, y: 41}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1424060816
@@ -722,3 +722,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1778791914}
+--- !u!1001 &1843025428
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 464058, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464058, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464058, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464058, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464058, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464058, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464058, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 464058, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 115830, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+      propertyPath: m_Name
+      value: Metal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 106dd53cd8d324fd0a56d62ece27a144, type: 2}
+  m_IsPrefabParent: 0
