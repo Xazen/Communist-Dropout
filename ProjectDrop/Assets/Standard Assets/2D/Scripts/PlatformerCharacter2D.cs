@@ -55,6 +55,11 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
+
+			if(m_Grounded)
+			{
+				SoundController.instance.playLanding();
+			}
             // If crouching, check to see if the character can stand up
             if (!crouch && m_Anim.GetBool("Crouch"))
             {
@@ -96,6 +101,7 @@ namespace UnityStandardAssets._2D
             // If the player should jump...
             if (m_Grounded && jump && m_Anim.GetBool("Ground"))
             {
+				SoundController.instance.playJump();
                 // Add a vertical force to the player.
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
