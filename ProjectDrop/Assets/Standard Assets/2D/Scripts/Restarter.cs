@@ -9,6 +9,7 @@ namespace UnityStandardAssets._2D
         {
             if (other.tag == "Player")
             {
+				SoundController.instance.playGameOver();
                 Application.LoadLevel(Application.loadedLevelName);
             }
         }

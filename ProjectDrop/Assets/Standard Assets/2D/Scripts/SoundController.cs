@@ -13,6 +13,10 @@ public class SoundController : MonoBehaviour
 	[SerializeField]
 	AudioClip
 		land;
+	[SerializeField]
+	AudioClip
+		gameover;
+
 	bool playedLanding = false;
 	AudioSource audioSource;
 
@@ -39,6 +43,13 @@ public class SoundController : MonoBehaviour
 		if (land != null) {
 			audioSource.PlayOneShot (land);				
 			playedLanding = true; 
+		}
+	}
+
+	public void playGameOver ()
+	{
+		if (gameover != null) {
+			audioSource.PlayOneShot (gameover);
 		}
 	}
 }
